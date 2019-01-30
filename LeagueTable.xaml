@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjectV1.LeagueTable">
+    <Grid>
+        <StackLayout>
+        <Label Text="League Table" HorizontalOptions="CenterAndExpand"/>
+        </StackLayout>
+        <StackLayout VerticalOptions="Start" HorizontalOptions="Start">
+            <Label Text=" "/>
+            <Label Text="Name: "/>
+            <Label Text="Win: "/>
+            <Label Text="Loss: "/>
+            <Label Text="Total: "/>
+        </StackLayout>
+
+    </Grid>
+</ContentPage>

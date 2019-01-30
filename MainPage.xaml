@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ProjectV1"
+             x:Class="ProjectV1.MainPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add"
+                     Activated="ToolbarItem_Activated"/>
+        <ToolbarItem Text="League Table"
+                     Activated="ToolbarItem_Activated_1"/>
+        <ToolbarItem Text="Delete"
+                     Activated="ToolbarItem_Delete_Player"/>
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.BindingContext>
+        <local:ViewModel/>
+    </ContentPage.BindingContext>
+    
+    <ListView  x:Name="playersListView"
+               HasUnevenRows="True"
+               ItemTapped="playersListView_ItemTapped">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout>
+                        <Label Text="{Binding Name}"/>
+                        <Label Text="{Binding Club}"/>
+                        <Label Text="{Binding Score}"/>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+
+</ContentPage>

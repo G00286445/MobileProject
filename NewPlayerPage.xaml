@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjectV1.NewPlayerPage">
+    <StackLayout Margin="10, 10, 10, 0">
+        <Entry x:Name="nameHome" 
+               Placeholder="Enter Home Player Name"/>
+        <Entry x:Name="nameClub"
+               Placeholder="Enter Club Name"/>
+        <Entry x:Name="score"
+               Placeholder="Enter Score"/>
+        <Button Text="Submit"
+                Clicked="Button_Clicked"/>
+    </StackLayout>
+</ContentPage>
